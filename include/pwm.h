@@ -11,6 +11,7 @@
 
 #define DEPTH_OF_ANALYSIS 10
 void pwm_init(void);
+void mon_timer_init(void);
 void setPwmDuty(uint8_t);
 void counter_init(void);
 void timer_init(void);

@@ -11,6 +11,8 @@ enum status {
 };
 
 struct global_variables {
+  uint8_t mon_fl;
+  uint16_t output_period;
   uint8_t pwm;
   uint16_t time_fixation;
   uint8_t flag_rev;
