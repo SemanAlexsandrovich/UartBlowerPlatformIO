@@ -1,3 +1,5 @@
+//main.cpp
+
 #include "glob.h"
 #include <errno.h>
 #include <string.h>
@@ -7,7 +9,6 @@
 #include "pwm.h"
 
 #define MAX_VALUE 65535
-//#define TICK_PWM 23//(1/F_PWM) = 1/43360 = 23/1 000 000
 #define TICK_PWM 20//(1/F_PWM) = 1/50000 = 20/1 000 000
 
 struct global_variables glob = {OFF, OFF, OFF, OFF, OFF, OFF , OFF, OFF, OFF, OFF, OFF, OFF, OFF, MAX_VALUE};
@@ -15,7 +16,6 @@ volatile struct global_variables *glob_parametrs = &glob;
 
 static int buf_index = 0;
 static char buffer[BUFF_SIZE] = {0};
-//char buff_to_send[BUFF_SIZE];
 
 const char welcome[] = 
 "\r\nUart boadrate - 115200. Add (NL & CR) to the end of the commands to use them.\r\n\
@@ -28,7 +28,6 @@ void setup() {
 	counter_init();
   UartInit();
   mon_timer_init();
-  //sei();
 	DebagUart(welcome); 
 }
 

@@ -1,14 +1,5 @@
-/*
- * pwm.c
- *
- * Created: 30.06.2022 17:56:58
- * Author : sshmykov
- */ 
-// #define F_CPU 16000000L
-// #include <avr/io.h>
-// #include <string.h>
-// #include <util/delay.h>
-//#include <avr/interrupt.h>
+// pwm.cpp
+
 #include "glob.h"
 #include "pwm.h"
 
